@@ -131,7 +131,7 @@ img {
   height: 4px;
   margin: 0 auto;
   left: 0;
-  bottom: -24px;
+  bottom: -25px;
   background-color: var(--light-blue);
   border-radius: 2px;
 }
@@ -202,14 +202,10 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--white);
   cursor: pointer;
   transition: background-color var(--transition);
-}
-
-.page-btn {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -524,9 +520,6 @@ img {
   color: var(--blue);
   background-color: var(--black-white);
   cursor: pointer;
-}
-
-.btn {
   padding: 12px 24px;
   border: 1px solid var(--light-white);
   border-radius: 4px;
@@ -592,6 +585,11 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.img-text:hover .img-parag-hidden,
+.img-portfolio:focus .img-parag-hidden {
+  transform: translate(0, 0);
+}
+
 /*---------------------- TRANSLATE------------------------ */
 
 .img-div {
@@ -608,8 +606,6 @@ img {
   margin-bottom: 0px;
   font-size: 16px;
   line-height: 1.5;
-}
-.img-parag-hidden {
   position: absolute;
   top: 0;
   left: 0;
@@ -631,6 +627,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--background-eclipse);
+  transform: opacity var(--transition), visibility var(--transition);
 }
 .modal {
   width: 408px;
@@ -654,12 +651,17 @@ img {
 .modal-button {
   width: 24px;
   height: 24px;
-  background: var(--light-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   margin-left: auto;
   border-radius: 50%;
-  transform: border-color var(--transition);
+  transform: background var(--transition), border var(--transition);
+  cursor: pointer;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background: var(--light-white);
 }
 
 .is-hidden {
