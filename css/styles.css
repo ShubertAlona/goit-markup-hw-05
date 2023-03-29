@@ -59,13 +59,12 @@ img {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding: 24px 0;
 }
 
 .header-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav {
@@ -143,8 +142,6 @@ img {
 .address-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-address:hover,
@@ -571,7 +568,7 @@ img {
   background: var(--white);
   border: 1px solid var(--light-white);
   padding: 32px 16px;
-  border-width: 0px 1px 1px 1px;
+  border-top: none;
 }
 
 .img-portfolio {
@@ -661,7 +658,7 @@ img {
 
 .modal-button:hover,
 .modal-button:focus {
-  background: var(--light-white);
+  background: var(--light-blue);
 }
 
 .is-hidden {
